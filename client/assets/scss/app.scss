@@ -1,0 +1,198 @@
+@import "settings";
+@import "foundation";
+
+//not-working??
+
+.column, .columns, #docs-flex-grid .docs-code-live .columns {
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    width: 100%;
+    float: left;
+}
+
+@media only screen and (min-width: 75em){
+  .large-4 {
+      -webkit-flex: 0 0 33.33333%;
+      -ms-flex: 0 0 33.33333%;
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%;
+  }
+}
+
+//COMMONERS
+
+.whitetxt{
+  background: #fff;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+
+
+//MENU 
+
+.main-header{
+  background: black;
+  width: 100%;
+  height: 50px;
+}
+
+.menu{
+  text-align: center;
+  margin: 0 auto;
+  width: 35%;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  li{
+    display: inline-block;
+    padding: 10px 15px;
+    &:first-child{
+      padding-left:0; 
+    }
+    &:last-child{
+      padding-right: 0;
+    }
+    a{
+      font-size: 12px;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+}
+
+.logo{
+  width: 30%;
+  display: inline-block;
+  img{
+    position: relative;
+    top: 10px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+///MENU
+
+
+.banner{
+  position: relative;
+  background: url('http://placehold.it/1280x700') no-repeat center center;
+  height:100vh;
+  padding:43vh 20vw;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  h5,p{
+    color: white;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+.text-banner{
+  position: relative;
+  padding: 20px 20vw;
+  h6,p{
+    text-align: center;
+  }
+  h6{
+    font-weight: bold;
+  }
+}
+
+.gender-banner{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  .col-50{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: inline-block;
+    width: 50%;
+    height: 100vh;
+    background: url('http://placehold.it/500x500/00ff00/ff00ff;') center center;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    a{
+      display: block;
+      width: auto;
+      margin: 0 auto;
+      padding: 330px 0;
+      text-align: center;
+    }
+    &.men{
+      background: url('http://placehold.it/500x500/0000ff/00ff00;') center center;
+      -webkit-background-size: 100%;
+      background-size: 100%;
+      float: right;
+    }
+  }
+}
+
+.button{
+  background: #B43A37;
+  padding: 20px 70px;
+  border: 1px solid white;
+  font-size: 12px;
+  &:hover{
+    background: #000;
+  }
+}
+
+.footer{
+  
+  ul.columns-3{
+    list-style-type: none;
+    margin: 0 auto;
+    columns: 3;
+    -webkit-columns: 3;
+    -moz-columns: 3;
+    text-align: center;
+    height: 70px;
+    max-height: 70px;
+    li{
+      text-align: center;
+      padding:0 8px;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+  }
+  
+  ul.foot-menu{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    li.main-title{
+      width: 33.3%;
+      height: 130px;
+      max-height: 130px;
+      display: inline-block;
+      -webkit-box-sizing: content-box;
+      -moz-box-sizing: content-box;
+      box-sizing: content-box;
+      h5{
+        text-transform: uppercase;
+        font-weight: bold; 
+        border-bottom: 1px dashed black;
+        border-top: 1px dashed black;
+        text-align: center;
+        font-size: 14px;
+        padding: 10px 0;
+      }
+      .content{
+        display: block;
+      }
+    }
+  }
+}
